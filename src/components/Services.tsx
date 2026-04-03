@@ -34,7 +34,7 @@ export default function Services() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Enterprise IT, Scaled for You</h2>
           <p className="text-lg text-slate-600">
-            Whether you need to augment your existing IT team or outsource entirely, Seafair provides the technical backbone your business needs to thrive.
+            Whether you need to augment your existing IT team or outsource entirely, Rojan Consultancy provides the technical backbone your business needs to thrive.
           </p>
         </div>
 

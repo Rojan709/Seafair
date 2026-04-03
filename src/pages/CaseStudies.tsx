@@ -8,7 +8,7 @@ export default function CaseStudies() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Customer Success Stories</h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            See how Canadian enterprises are scaling securely and eliminating downtime with Seafair.
+            See how Canadian enterprises are scaling securely and eliminating downtime with Rojan Consultancy.
           </p>
         </div>
       </section>

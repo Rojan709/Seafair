@@ -57,7 +57,7 @@ export default function ServiceDetail() {
               <p className="text-lg text-slate-600 leading-relaxed">{data.problem}</p>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">The Seafair Solution</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">The Rojan Consultancy Solution</h2>
               <p className="text-lg text-slate-600 leading-relaxed">{data.solution}</p>
             </div>
           </div>

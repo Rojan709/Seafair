@@ -62,7 +62,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1">Email</h3>
-                    <p className="text-slate-600">hello@seafair.ca<br />support@seafair.ca</p>
+                    <p className="text-slate-600">hello@rojanconsultancy.com<br />support@rojanconsultancy.com</p>
                   </div>
                 </div>
               </div>

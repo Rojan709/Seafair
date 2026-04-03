@@ -12,11 +12,11 @@ export default function Footer() {
                 <Shield className="w-5 h-5 text-white" />
               </div>
               <span className="font-bold text-xl tracking-tight text-white">
-                Seafair<span className="text-blue-500">.</span>
+                Rojan Consultancy<span className="text-blue-500">.</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-sm">
-              Seafair Capital (2025) Inc. - Branch Innovations Division. We provide enterprise-grade IT support, cybersecurity, and managed services to businesses across Canada.
+              Rojan Consultancy. We provide enterprise-grade IT support, cybersecurity, and managed services to businesses across Canada.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
@@ -63,14 +63,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-500 shrink-0" />
-                <span>hello@seafair.ca</span>
+                <span>hello@rojanconsultancy.com</span>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
-          <p>&copy; 2025 Seafair Capital Inc. All rights reserved.</p>
+          <p>&copy; 2026 Rojan Consultancy. All rights reserved.</p>
           <div className="flex gap-6">
             <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>

@@ -36,7 +36,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Enterprise IT Services</h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            From daily help desk support to complex cloud migrations, Seafair provides the technical backbone your business needs to scale securely.
+            From daily help desk support to complex cloud migrations, Rojan Consultancy provides the technical backbone your business needs to scale securely.
           </p>
         </div>
       </section>

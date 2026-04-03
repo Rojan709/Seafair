@@ -6,9 +6,9 @@ export default function About() {
     <div className="pt-24">
       <section className="py-20 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Seafair</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Rojan Consultancy</h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            We are the technology division of Seafair Capital, dedicated to making enterprise-grade IT accessible and secure for every Canadian business.
+            We are Rojan Consultancy, dedicated to making enterprise-grade IT accessible and secure for every Canadian business.
           </p>
         </div>
       </section>

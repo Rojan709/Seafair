@@ -12,7 +12,7 @@ export default function Careers() {
     <div className="pt-24">
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Join the Seafair Team</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Join the Rojan Consultancy Team</h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             We're looking for passionate IT professionals who want to solve complex problems and build secure infrastructure.
           </p>

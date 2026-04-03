@@ -1,6 +1,7 @@
 import express from 'express';
 import { createServer as createViteServer } from 'vite';
 import path from 'path';
+import nodemailer from 'nodemailer';
 
 async function startServer() {
   const app = express();
@@ -8,21 +9,60 @@ async function startServer() {
 
   app.use(express.json());
 
+  // --- EMAIL CONFIGURATION ---
+  const transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    port: parseInt(process.env.SMTP_PORT || '587'),
+    secure: process.env.SMTP_SECURE === 'true',
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    },
+  });
+
+  const sendNotification = async (subject: string, text: string) => {
+    if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.warn('⚠️ SMTP credentials missing in environment. Email not sent to sirescanor0@gmail.com. Payload:', { subject, text });
+      return;
+    }
+    try {
+      await transporter.sendMail({
+        from: `"Rojan Consultancy System" <${process.env.SMTP_USER}>`,
+        to: 'sirescanor0@gmail.com',
+        subject,
+        text,
+      });
+      console.log('✅ Notification email sent to sirescanor0@gmail.com');
+    } catch (error) {
+      console.error('❌ Failed to send email:', error);
+    }
+  };
+
   // --- API ENDPOINTS ---
 
   // 1. Contact Form Submission
-  app.post('/api/v1/leads/contact', (req, res) => {
+  app.post('/api/v1/leads/contact', async (req, res) => {
     const { name, email, phone, message } = req.body;
     console.log('New Contact Lead:', { name, email, phone, message });
-    // TODO: Save to DB, Send Email via SendGrid, Alert Slack
+    
+    await sendNotification(
+      'New Contact Form Submission - Rojan Consultancy',
+      `You have received a new contact form submission.\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\nMessage: ${message}`
+    );
+    
     res.status(200).json({ success: true, message: 'Message received successfully.' });
   });
 
   // 2. Consultation / Lead Capture Modal Submission
-  app.post('/api/v1/leads/consultation', (req, res) => {
+  app.post('/api/v1/leads/consultation', async (req, res) => {
     const { name, email, companySize, painPoint, serviceInterest } = req.body;
     console.log('New Consultation Request:', { name, email, companySize, painPoint, serviceInterest });
-    // TODO: Save to DB, Send Email, Alert Slack
+    
+    await sendNotification(
+      'New Consultation Request - Rojan Consultancy',
+      `You have received a new consultation request.\n\nName: ${name}\nEmail: ${email}\nCompany Size: ${companySize}\nPain Point: ${painPoint}\nService Interest: ${serviceInterest}`
+    );
+
     res.status(200).json({ success: true, message: 'Consultation requested successfully.' });
   });
 

@@ -30,7 +30,7 @@ export default function Benefits() {
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-              Why leading companies choose Seafair
+              Why leading companies choose Rojan Consultancy
             </h2>
             <p className="text-lg text-slate-600 mb-8">
               We believe IT should be a growth driver, not a cost center. Our approach shifts your technology from a source of frustration to your competitive advantage.

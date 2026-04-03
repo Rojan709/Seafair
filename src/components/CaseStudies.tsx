@@ -7,7 +7,7 @@ export default function CaseStudies() {
       title: "Securing Patient Data & Achieving 100% Compliance",
       metric: "Zero",
       metricLabel: "Downtime Incidents",
-      description: "A regional clinic network was struggling with legacy servers and compliance risks. Seafair migrated them to a secure cloud environment in 30 days.",
+      description: "A regional clinic network was struggling with legacy servers and compliance risks. Rojan Consultancy migrated them to a secure cloud environment in 30 days.",
       image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=600"
     },
     {

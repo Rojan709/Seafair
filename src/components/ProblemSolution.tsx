@@ -54,7 +54,7 @@ export default function ProblemSolution() {
               <div className="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center">
                 <CheckCircle2 className="w-6 h-6 text-emerald-400" />
               </div>
-              <h3 className="text-2xl font-bold">The Seafair Way</h3>
+              <h3 className="text-2xl font-bold">The Rojan Consultancy Way</h3>
             </div>
             
             <ul className="space-y-6 relative z-10">
